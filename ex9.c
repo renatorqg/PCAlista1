@@ -1,4 +1,4 @@
-//Lista 1 -- Exercício 9
+//Lista 1 -- ExercÃ­cio 9
 //Luiz Eduardo Acciari -- 10/08/2019
 
 #include<stdio.h>
@@ -16,7 +16,7 @@ int main()
 {
 	float grau,r;
 	do{
-		printf("Digite o ângulo ou 0 para parar:");
+		printf("Digite o Ã¢ngulo ou 0 para parar:");
 		scanf("%f",&grau);
 		if(grau==0)
 		{
