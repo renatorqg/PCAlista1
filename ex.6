@@ -1,0 +1,67 @@
+//6) Elabore um programa para simular as 4 operações básicas (+, -, * e /).
+//Ler 2 (dois) números no programa principal e “passá-los” como parâmetros
+//para 4 funções (uma para cada operação). As funções deverão retornar os
+//resultados das operações ao programa principal, onde estes e os dados
+//iniciais deverão ser impressos. 
+
+//****Trabalho Talles Zilio e Gabriel Marciano***
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+float soma(float a, float b);
+float menos(float c, float d);
+float divisao(float e, float f);
+float multi(float g, float h);
+
+
+
+int main()
+{
+float x,y,q,w,e,r;
+
+printf("Digit dois valores A e B \n");
+scanf("%f %f", &x,&y);
+
+q=soma(x,y);
+w=menos(x,y);
+e=divisao(x,y);
+r=multi(x,y);	
+
+printf("Valor de A = %f \n",x);
+printf("Valor de B = %f \n",y);
+printf("Valor da soma = %f \n",q);
+printf("Valor da subtraçao = %f \n",w);
+printf("Valor da divisao = %f \n",e);
+printf("Valor da multiplicaçao = %f \n",r);
+}
+
+float soma (float a, float b)
+{
+float r;
+r=a+b; 
+return r;
+}
+
+float divisao(float e, float f)
+{
+float k;
+k= e/f;
+return k;
+}
+
+float menos(float c, float d)
+{
+return(c-d) ;
+}
+
+
+
+float multi(float g, float h)
+{
+float w;
+w= g*h;
+return w;	
+}
