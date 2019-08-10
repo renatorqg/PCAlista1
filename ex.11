@@ -1,0 +1,28 @@
+#include<stdlib.h>
+#include<stdio.h>
+
+float ponderada(float n1, float n2, int p1, int p2)
+{
+	float mp;
+	
+	mp = (n1*p1+n2*p2)/(p1+p2);
+	
+	return mp;
+	
+}
+
+int main()
+{
+	float N, n, v;
+	int P, p;
+	
+	printf("Insira as notas das P1 e da P2\n\n");
+	scanf("%f %f", &N, &n);
+	printf("Insira os pesos da p1 e p2\n\n");
+	scanf("%d %d", &P, &p);
+	v = ponderada(N,n,P,p);
+	printf("A media ponderada eh %f.\n\nConsiderando que a as notas da P1 e da P2 sao: %f, %f\n\nE os pesos de cada sao: %d, %d\n\n", v, N, n, P, p);
+	
+	system("pause");
+	return 0;
+}
