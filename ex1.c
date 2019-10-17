@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int somaNumeros(int N);
+int somaNumeros(int X);
 
 int main()
-{
+{   
+    printf("Digite o valor de N: ");
     int n, soma;
     scanf("%d", &n);
     soma = somaNumeros(n);
-    printf("Valor N = %d\n",n);
     printf("Somatória dos N primeiros números: %d\n",soma);
     return 0;
 }
